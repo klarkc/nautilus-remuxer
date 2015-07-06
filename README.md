@@ -1,7 +1,7 @@
 # nautilus-remuxer
 Remuxing scripts for nautilus-scripts
 
-# Pre-requisites:
+# Pre-requisites
 * FFmpeg (or libav)
 * Zenity
 * Gnome
