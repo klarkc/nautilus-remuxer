@@ -1,4 +1,4 @@
-# nautilus-remuxer
+# Nautilus-remuxer
 Remuxing scripts without re-encoding for nautilus-scripts
 
 # Pre-requisites
