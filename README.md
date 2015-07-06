@@ -1,5 +1,5 @@
 # nautilus-remuxer
-Remuxing scripts for nautilus-scripts
+Remuxing scripts without re-encoding for nautilus-scripts
 
 # Pre-requisites
 * FFmpeg (or libav)
