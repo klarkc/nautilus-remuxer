@@ -15,6 +15,6 @@ Remuxing scripts without re-encoding for nautilus-scripts
 1. Create a executable file into Remuxer folder, with:
 ```
 #!/bin/bash
-bash ~/.local/share/nautilus/scripts/Remuxer/remux.sh #EXTENSION (eg: avi, mp3, mp4, mkv)
+bash ~/.local/share/nautilus/scripts/Remuxer/remux.sh avi #CHANGE THE EXTENSION (eg: avi, mp3, mp4, mkv)
 ```
 2. Execute `./install.sh` file
