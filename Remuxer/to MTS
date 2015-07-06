@@ -4,7 +4,9 @@ base=${extract%.*}
 #comands=`ffmpeg -i "$@" -c:a copy -c:v copy "$base".mts` | (zenity --progress --pulsate --auto-close --title="Remuxing to mts" --text="$@")
 
 # Vars.
-ICON=/usr/share/icons/ffmpeg.png
+SCRIPTS=~/.local/share/nautilus/scripts/Remuxer
+ICON=$SCRIPTS/ffmpeg.png
+SOUND=$SCRIPTS/notify.wav
 LOG=/tmp/re-coding.log
 
 display () # Calculate/collect progress bar info. & pipe to Zenity.
@@ -98,4 +100,4 @@ TEXT="Total re-muxing time: $(date -d @$BATCH -u +%H:%M:%S)."
 echo -e "$TEXT\n\
 __________________________________________________________________" >> $LOG
 notify-send -i $ICON "Re-muxing completed" "$TEXT"
-/usr/bin/canberra-gtk-play --volume 2 -f /usr/share/sounds/2tone.wav
+/usr/bin/canberra-gtk-play --volume 2 -f $SOUND
